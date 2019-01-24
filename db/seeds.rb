@@ -25,7 +25,7 @@ puts "5 skills created"
 
 9.times do |portfolio_item|
     Portfolio.create!(
-        title: "some title",
+        title: "Portfolio # #{portfolio_item}",
         subtitle: "Awesome",
         body: body,
         main_image:"https://placehold.it/600x400",
