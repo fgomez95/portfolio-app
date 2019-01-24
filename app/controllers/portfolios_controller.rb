@@ -16,6 +16,16 @@ class PortfoliosController < ApplicationController
         end
     end
     
+    def edit 
+        @portfolio_item=Portfolio.find(params[:id])
+    end
+    
+    def update 
+        @portfolio_item=Portfolio.find(params[:id])
+        if @portfolio_item.update(portfolio_params)
+            redirect_to portfolios_path
+        end
+    end
     private
     
     def portfolio_params
