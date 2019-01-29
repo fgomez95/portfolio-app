@@ -36,12 +36,9 @@ puts "5 skills created"
         subtitle: "#{Faker::Vehicle.fuel_type}, #{Faker::Vehicle.transmission}",
         body: gen_paragraph,
         main_image:"https://placehold.it/600x400",
-        thumb_image:"https://placehold.it/350x200"
+        thumb_image:"https://placehold.it/350x200",
+        technologies_attributes: [{name: Faker::Vehicle.engine_size}]
         )
-end
-
-3.times do
-    Portfolio.last.technologies.create!(name: Faker::Vehicle.engine_size)
 end
 
 puts 'portfolio items and technologies created'
