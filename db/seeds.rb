@@ -40,3 +40,9 @@ puts "5 skills created"
         )
 end
 
+3.times do
+    Portfolio.last.technologies.create!(name: Faker::Vehicle.engine_size)
+end
+
+puts 'portfolio items and technologies created'
+
