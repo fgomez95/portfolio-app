@@ -7,4 +7,11 @@ module ApplicationHelper
             (link_to 'Login', new_user_session_path)
         end
     end
+    
+    def session_message
+        if  session[:q] 
+            greeting = "Thank you for visting from #{session[:q]}"
+            content_tag(:p, greeting, class: "source_greeting")
+        end 
+    end
 end

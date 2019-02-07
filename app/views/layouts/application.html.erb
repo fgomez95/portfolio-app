@@ -8,14 +8,15 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-  <% if  session[:q] %>
-    Thank you for visiting from <%= session[:q] %>
-  <% end %>
+  
+  <%= session_message %>
+  
   <body>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
     <%= render 'shared/nav', location: 'main' %>
     <%= login_helper %>
-  <%= yield %>
+    <%= yield %>
   </body>
+  
 </html>
