@@ -4,19 +4,20 @@
     <title><%= @page_title %></title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    
     <meta name="keyboards" content="<%= @keywords %>"></meta>
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    
+    <%= stylesheet_link_tag    'portfolios', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    
   </head>
-  
-  <%= session_message %>
   
   <body>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
-    <%= render 'shared/nav', location: 'main' %>
     <%= login_helper %>
     <%= yield %>
+    <%= render 'shared/nav', location: 'portfolios' %>
+    <%= session_message %>
   </body>
-  
 </html>
