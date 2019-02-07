@@ -26,7 +26,7 @@
     
     <%= yield %>
   
-    <%= render 'shared/nav' %>
+    <%= render 'shared/nav', location: 'portfolios' %>
     
     <% if  session[:q] %>
         Thank you for visiting from <%= session[:q] %>
