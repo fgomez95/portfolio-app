@@ -14,6 +14,10 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'friendly_id', '~> 5.2', '>= 5.2.5'
 gem 'devise', '~> 4.5'
+gem 'bootstrap', '~> 4.3'
+gem 'jquery-rails'
+gem 'bootstrap-sass'
+gem 'test_copy_right_tool', git: 'https://github.com/fgomez95/test_copy_right_tool'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
