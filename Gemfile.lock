@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/fgomez95/test_copy_right_tool
+  revision: 38cf1f544a9dfb9908cbecbf1ae613333b235c3b
+  specs:
+    test_copy_right_tool (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -225,6 +231,7 @@ DEPENDENCIES
   sass-rails (~> 5.0)
   spring
   spring-watcher-listen (~> 2.0.0)
+  test_copy_right_tool!
   turbolinks (~> 5)
   tzinfo-data
   uglifier (>= 1.3.0)
