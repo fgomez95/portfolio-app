@@ -18,6 +18,7 @@ gem 'bootstrap', '~> 4.3'
 gem 'jquery-rails'
 gem 'bootstrap-sass'
 gem 'test_copy_right_tool', git: 'https://github.com/fgomez95/test_copy_right_tool'
+gem 'petergate', '~> 2.0', '>= 2.0.1'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
