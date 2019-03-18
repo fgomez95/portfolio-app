@@ -3,7 +3,7 @@
         <%= image_tag portfolio_item.thumb_image, class: "card-img-top" unless !portfolio_item.thumb_image %>
         <div class="card-body">
             <p class="card-text">
-                <span><%= link_to (truncate portfolio_item.body), portfolio_path(portfolio_item) %></span>
+                <span><%= link_to (truncate portfolio_item.body), portfolio_show_path(portfolio_item) %></span>
                 <span><%= portfolio_item.subtitle %></span>
             </p>
         </div>
