@@ -4,14 +4,14 @@ class PortfoliosController < ApplicationController
     access all: [:show, :index], user: {except: [:destroy, :new, :create, :edit, :update]}, site_admin: :all
   
     def index 
-        @portfolio_items=Portfolio.first_two
+        @portfolio_items = Portfolio.all
     end
     
     def show 
     end
     
     def new
-        @portfolio_item=Portfolio.new
+        @portfolio_item = Portfolio.new
         3.times { @portfolio_item.technologies.build }
         
     end
